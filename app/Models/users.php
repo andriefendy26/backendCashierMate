@@ -14,7 +14,8 @@ class users extends Model
     use HasFactory, HasApiTokens;
 
     protected $table = 'users';
-    protected $fillable = ['nama', 'email', 'password', 'usaha_id', 'role_id', 'gambar'];
+    protected $fillable = ['nama', 'email','alamat', 'password', 'usaha_id', 'role_id', 'gambar'];
+    
     protected $hidden = [
         'password',
         // 'remember_token',
